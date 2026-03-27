@@ -25,5 +25,6 @@ public class Funcionario {
     private Double salario;
 
     @ManyToOne
+    @JoinColumn(name = "departamento_id")
     private Departamento departamento;
 }

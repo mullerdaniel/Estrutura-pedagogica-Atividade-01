@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
 import java.util.List;
 
 @AllArgsConstructor
@@ -22,6 +23,6 @@ public class Departamento {
     @Column(name = "nome_departamento", nullable = false)
     private String nome;
 
-    @OneToMany
+    @OneToMany(mappedBy = "departamento", cascade = CascadeType.ALL)
     private List<Funcionario> funcionarios;
 }
