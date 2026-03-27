@@ -1,9 +1,11 @@
 package com.weg.estrutura_pedagogica.Dto;
 
-import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
-public record DepartamentoRequisicaoDto(
-        String nome,
-        List<FuncionarioRequisicaoDto> funcionarios
-) {
+@Getter
+@Setter
+public class DepartamentoRequisicaoDto {
+
+    private String nome;
 }

@@ -1,7 +1,12 @@
 package com.weg.estrutura_pedagogica.Dto;
 
-public record DepartamentoRespostaDto(
-        Long id,
-        String nome
-) {
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class DepartamentoRespostaDto {
+
+    private Long id;
+    private String nome;
 }
